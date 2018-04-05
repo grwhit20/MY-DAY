@@ -1,3 +1,15 @@
+function openNav() {
+  document.getElementById("navigation").style.transform = "translateX(0px)";
+  document.getElementById("openbutton").style.transform = "translateX(0px)";
+  document.getElementById("openbutton").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("openbutton").style.transform = "translateX(200px)";
+  document.getElementById("openbutton").style.width = "15%";
+  document.getElementById("navigation").style.transform = "translateX(-300px)";
+}
+
 function hourOneClick() {
   document.getElementById("infophoto").style.background = "url('https://i.imgur.com/XMerWpH.jpg')";
   document.getElementById("infocontainer").style.transform = "translateY(0%)";
